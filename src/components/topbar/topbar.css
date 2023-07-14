@@ -79,10 +79,12 @@
   border-radius: 50%;
   color: white;
   position: absolute;
-  margin-right: 5px;
+  margin-right: 7px;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   font-size: 12px;
+  top: -2px;
+  right: 0.8;
 }
 
 .topbarimg{
