@@ -8,6 +8,8 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import EventIcon from '@mui/icons-material/Event';
 import SchoolIcon from '@mui/icons-material/School';
+import {Users} from "../../dummyData";
+import CloseFriend from "../closeFriend/closeFriend";
 
 const sidebar = () => {
   return(
@@ -70,61 +72,11 @@ const sidebar = () => {
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr"></hr>
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend"></li>
-          <img className="sidebarFriendImg" src="/Assets/person/4.jpg.jpg" alt=""></img>
-          <span className="sidebarFriendName">Daniel Tytan</span>
+        {Users.map(u=>(
+            <CloseFriend key= {u.id} user= {u} />
+          ))}
+          
         </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend"></li>
-          <img className="sidebarFriendImg" src="/Assets/person/4.jpg.jpg" alt=""></img>
-          <span className="sidebarFriendName">Daniel Tytan</span>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend"></li>
-          <img className="sidebarFriendImg" src="/Assets/person/4.jpg.jpg" alt=""></img>
-          <span className="sidebarFriendName">Daniel Tytan</span>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend"></li>
-          <img className="sidebarFriendImg" src="/Assets/person/4.jpg.jpg" alt=""></img>
-          <span className="sidebarFriendName">Daniel Tytan</span>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend"></li>
-          <img className="sidebarFriendImg" src="/Assets/person/4.jpg.jpg" alt=""></img>
-          <span className="sidebarFriendName">Daniel Tytan</span>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend"></li>
-          <img className="sidebarFriendImg" src="/Assets/person/4.jpg.jpg" alt=""></img>
-          <span className="sidebarFriendName">Daniel Tytan</span>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend"></li>
-          <img className="sidebarFriendImg" src="/Assets/person/4.jpg.jpg" alt=""></img>
-          <span className="sidebarFriendName">Daniel Tytan</span>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend"></li>
-          <img className="sidebarFriendImg" src="/Assets/person/4.jpg.jpg" alt=""></img>
-          <span className="sidebarFriendName">Daniel Tytan</span>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend"></li>
-          <img className="sidebarFriendImg" src="/Assets/person/4.jpg.jpg" alt=""></img>
-          <span className="sidebarFriendName">Daniel Tytan</span>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend"></li>
-          <img className="sidebarFriendImg" src="/Assets/person/4.jpg.jpg" alt=""></img>
-          <span className="sidebarFriendName">Daniel Tytan</span>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend"></li>
-          <img className="sidebarFriendImg" src="/Assets/person/4.jpg.jpg" alt=""></img>
-          <span className="sidebarFriendName">Daniel Tytan</span>
-        </ul>
-        
       </div>
     </div>
 
