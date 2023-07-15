@@ -1,6 +1,6 @@
 import "./closeFriend.css";
 
- const closeFriend = ({user}) =>{
+const closeFriend = ({user}) =>{
   return(
     <li className="sidebarFriend">
       <img className="sidebarFriendImg" src={user.profilePicture} alt=""></img>
