@@ -1,21 +1,11 @@
-import Topbar from "./components/topbar/topbar";
-import Sidebar from "./components/sidebar/sidebar";
-import Feed from "./components/feed/feed";
-import Rightbar from "./components/rightbar/rightbar";
-import './home.css'
+import Home from "./pages/home/home";
+import Profile from "./pages/profile/profile";
 
 
 function App() {
-  return(
-  <>
-    <Topbar/>
-    <div className="homeContainer">
-      <Sidebar />
-      <Feed />
-      <Rightbar />
-    </div>
-  </>
-    
+  return( 
+  <Profile />
+ 
   )
 }
 
