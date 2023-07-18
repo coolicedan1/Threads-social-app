@@ -32,7 +32,6 @@ const topbar = () => {
           </div>
           <div className="topbarIconItem">
             <NotificationsIcon />
-            <span className="topbarIconBadge">1</span>
           </div>
         </div>
         <img src="Assets/person/3.jpg.jpg" alt="" className="topbarimg" />
